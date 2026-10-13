@@ -1,4 +1,4 @@
-// AudioConvertisseurM4A.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
+// AudioConvertisseurMP3.cpp 
 //
 #include <iostream>
 #include <windows.h>
@@ -86,7 +86,7 @@ int ExtrapolerNomCible(char* source)
 int SelectionDossier()
 {
 	BROWSEINFO bi = { 0 };
-	bi.lpszTitle = _T("Dossier à traiter");
+	bi.lpszTitle = _T("Dossier a traiter");
 	LPITEMIDLIST pidl = SHBrowseForFolder(&bi);
 	if (pidl != 0) {
 		if (SHGetPathFromIDList(pidl, Source)) {
